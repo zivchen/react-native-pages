@@ -6,7 +6,6 @@ import {
   SafeAreaView,
   Animated,
   Platform,
-  ViewPropTypes,
 } from 'react-native';
 
 import Indicator from '../indicator';
@@ -37,9 +36,6 @@ export default class Pages extends PureComponent {
   };
 
   static propTypes = {
-    style: ViewPropTypes.style,
-    containerStyle: ViewPropTypes.style,
-
     indicatorColor: PropTypes.string,
     indicatorOpacity: PropTypes.number,
     indicatorPosition: PropTypes.oneOf([
